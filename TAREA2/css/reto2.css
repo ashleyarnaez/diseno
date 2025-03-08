@@ -1,0 +1,62 @@
+/* Estilos generales */
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: #eae5ef;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.seccion {
+    flex-grow: 1; /* Hace que el contenido empuje el footer hacia abajo */
+}
+
+.seccion .tituloSeccion {
+    padding-top: 80px;
+    padding-bottom: 10px;
+    font-size: 60px;
+}
+
+.seccion .icon {
+    clip-path: circle();
+    background-color: #6F59E6;
+    padding: 12px;
+    font-size: 50px;
+    color: #eae5ef;
+}
+
+a {
+    color: inherit; 
+    text-decoration: none; 
+}
+  
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+header, footer {
+    width: 100%;
+    background-color: #757091;
+    color: #dad7e8;
+    padding: 10px 10px;
+}
+
+header {
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 25px;
+    text-align: center;
+}
