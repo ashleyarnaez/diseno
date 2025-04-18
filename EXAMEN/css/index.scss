@@ -1,0 +1,81 @@
+$primary-color: #d4a017;
+$dark-color: #1a1a1a;
+$light-color: #f8f9fa;
+$font-stack: 'Nunito', sans-serif;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: $font-stack;
+  scroll-behavior: smooth;
+}
+
+.section {
+  padding: 4rem;
+}
+
+.banner {
+  @include flex-center;
+  height: 100vh;
+  background: url('../img/banner.jpg') no-repeat center center/cover;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.7);
+}
+
+.button-base {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.btn-primary {
+  @extend .button-base;
+  background-color: $primary-color;
+  border: none;
+  color: white;
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+.custom-toggler {
+  border-color: $primary-color;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23d4a017' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+.footer {
+  background-color: $dark-color;
+  color: white;
+  small {
+    font-size: 0.85rem;
+  }
+}
+
+.scroll-top-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+  background-color: $primary-color;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 0.75rem 1rem;
+  font-size: 1.25rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: none;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+    transform: translateY(-3px);
+  }
+}
+
