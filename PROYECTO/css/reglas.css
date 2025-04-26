@@ -1,0 +1,164 @@
+@media (max-width: 992px) {
+  .hero {
+    height: 70vh;
+    min-height: 500px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .price-table, .producto-card, .promo-card, .noticia-card {
+    margin-bottom: 20px;
+  }
+
+  .galeria-carrusel img {
+    height: 60vh;
+  }
+
+  .banner-sabores {
+    height: 70vh;
+    min-height: 500px;
+  }
+}
+
+/* Pantallas pequeñas: móviles */
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh;
+    min-height: 400px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .btn-gelato {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .price-table, .producto-card, .promo-card, .noticia-card {
+    padding: 20px 15px;
+  }
+
+  .font-icon {
+    font-size: 40px;
+  }
+
+  .banner-sabores {
+    height: 60vh;
+    min-height: 400px;
+  }
+
+  .galeria-carrusel img {
+    height: 50vh;
+  }
+
+  .sabores-tira img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    clip-path: circle(45% at 50% 50%);
+  }
+
+  .promos-mes img, .noticias-mes img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .accordion-button, .accordion-item, .accordion-body {
+    max-width: 100%;
+  }
+
+  .whatsapp-float {
+    bottom: 15px;
+    right: 15px;
+    padding: 8px;
+  }
+}
+
+/* Pantallas muy pequeñas: móviles pequeños */
+@media (max-width: 576px) {
+  .hero {
+    height: auto;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .hero-content {
+    height: auto;
+    min-height: unset;
+    padding: 0 15px;
+  }
+
+  .hero-background {
+    background-position: center top;
+    background-size: cover;
+  }
+
+  .banner-sabores {
+    height: auto;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-position: center top;
+    background-size: cover;
+  }
+
+  .banner-sabores .hero-content {
+    height: auto;
+    min-height: unset;
+    padding: 0 15px;
+  }
+
+  .banner-background {
+    background-position: center top;
+    background-size: cover;
+  }
+
+  .sabores-tira .item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+
+  .promos-mes img {
+    clip-path: ellipse(45% 40% at 50% 50%);
+  }
+}
+
+/* Pantallas grandes: monitores grandes */
+@media (min-width: 1400px) {
+  .galeria-carrusel img {
+    height: 90vh;
+  }
+
+  .banner-sabores {
+    height: 100vh;
+    min-height: 700px;
+  }
+
+  .hero {
+    height: 100vh;
+    min-height: 800px;
+  }
+}
